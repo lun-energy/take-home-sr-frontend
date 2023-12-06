@@ -1,46 +1,55 @@
-# Getting Started with Create React App
+## The challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+One of the key first steps Lun must take as we expand to new markets is to capture relevant installer leads early, so by the time we launch, we have a list of interested installers to reach out to. Your task is to implement a newsletter signup flow on a landing page that allows us to capture highly interested leads.
 
-## Available Scripts
+## Figma file
 
-In the project directory, you can run:
+**Important:** Be careful not to import the Figma file into your employers Figma team.
 
-### `npm start`
+- Figma file: [https://drive.google.com/file/d/1_fxlItL7csU_cPQX9JqKFs4qGsFt9v_O/view](https://drive.google.com/file/d/1_fxlItL7csU_cPQX9JqKFs4qGsFt9v_O/view)
+- How to import the file into your \_personal\_ team: [https://youtu.be/XsRkzTjGlPY](https://youtu.be/XsRkzTjGlPY)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Instructions
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Clone or download the repo (don't fork) and implement the mockup from the Figma file using the best practises you know.
 
-### `npm test`
+Use any method of styling you prefer. The app is currently set up with TailwindCSS, but it's based on `create-react-app`, so setting up something else should be relatively straight forward.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Feel free to use external libraries where/if it makes sense. For instance, you might want to implement client side validation using a library, or you might want to use the built in constraint validation API. Up to you.
 
-### `npm run build`
+Ideally, we'd like to see your progression through commits - structure the solution as you would structure a feature branch in a real project. Describe your thought process, assumptions, tradeoffs and things you would do differently in PROGRESS.md.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+When you're done, send us your solution in a zip file (don't forget the .git folder).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Please let us know how long the challenge takes you. We're not looking for how speedy or lengthy you are. It's just really to give us a clearer idea of what you've produced in the time you decided to take. Spend at most a day on it.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Folder Structure
 
-### `npm run eject`
+```
+·
+└─ src/
+   ├─ components/
+   │    Generic, reusable components. Feel free to structure
+   │    however you prefer.
+   │
+   ├─ locales/
+   │    Translations for the app.
+   │
+   ├─ routes/
+   │    Routes for the app. You'll primarily work in
+   │    `NewsletterSignup.tsx`.
+   │
+   └─ services/
+        You might want to implement API interaction here or
+        however else you prefer to structure it.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Running the app
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+| Command                  | Description                            |
+| ------------------------ | -------------------------------------- |
+| `npm run start`          | Run the app in development mode        |
+| `npm run test:component` | Runs the Cypress component tests.      |
+| `npm run test:unit`      | Runs the Jest unit test in watch mode. |
+| `npm run typecheck`      | Typecheck the app                      |
